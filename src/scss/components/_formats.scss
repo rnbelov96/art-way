@@ -1,0 +1,180 @@
+.formats {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 98px;
+
+  @media (max-width: 767px) {
+    top: -110px;
+    padding-top: 0;
+    margin-bottom: -110px;
+  }
+
+  @media (max-width: 575px) {
+    padding-bottom: 50px;
+  }
+}
+
+.formats__title {
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 33px;
+  font-size: 44px;
+  font-weight: bold;
+
+  span {
+    color: #cc3a3c;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 31px;
+  }
+}
+
+.formats__text {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.44;
+
+  @media (max-width: 575px) {
+    font-size: 14px;
+  }
+}
+
+.formats__block-text {
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  margin-bottom: 100px;
+  background-color: #eeeef0;
+  font-size: 18px;
+  line-height: 1.44;
+
+  @media (max-width: 575px) {
+    font-size: 15px;
+  }
+}
+
+.formats__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  @media (max-width: 1450px) {
+    justify-content: space-around;
+  }
+}
+
+.formats__item {
+  position: relative;
+  width: 100%;
+  max-width: 465px;
+  min-height: 325px;
+  padding-top: 95px;
+  padding-right: 20px;
+  padding-bottom: 45px;
+  padding-left: 20px;
+  border: solid 1px #cc3a3c;
+  margin-bottom: 50px;
+  border-radius: 2px;
+
+  @media (max-width: 1450px) {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+.formats__item-caption {
+  position: absolute;
+  top: -47px;
+  left: 50%;
+  width: 90%;
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  border: solid 6px white;
+  margin-bottom: 0;
+  background-color: #cc3a3c;
+  border-radius: 2px;
+  color: white;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: center;
+  transform: translateX(-50%);
+
+  @media (max-width: 575px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+}
+
+.formats__item-block-text {
+  width: 278px;
+  min-height: 56px;
+  padding-top: 19px;
+  padding-right: 10px;
+  padding-bottom: 19px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-bottom: 27px;
+  margin-left: auto;
+  background-color: #eeeef0;
+  font-size: 18px;
+  line-height: 1.44;
+  text-align: center;
+
+  @media (max-width: 575px) {
+    width: 240px;
+  }
+}
+
+.formats__item-fee {
+  padding-bottom: 20px;
+  color: #cc3a3c;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+  text-align: center;
+}
+
+.formats__item-royal {
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  text-align: center;
+}
+
+.formats__item-invest {
+  font-size: 18px;
+  line-height: 1.44;
+  text-align: center;
+}
+
+.formats__note {
+  margin-bottom: 0;
+  color: #cc3a3c;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  text-align: center;
+}
+
+.formats__camera-img {
+  position: absolute;
+  top: -200px;
+  right: 0;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

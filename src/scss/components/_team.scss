@@ -1,0 +1,243 @@
+.team {
+  min-height: 1437px;
+  padding-top: 304px;
+  padding-bottom: 356px;
+  background-image: url('/src/img/bgs/team-bg.png');
+  overflow-x: hidden;
+
+  @include bg;
+
+  @media (max-width: 1200px) {
+    min-height: 1154px;
+    padding-top: 185px;
+    padding-bottom: 137px;
+  }
+
+  @media (max-width: 991px) {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $red;
+    background-image: none;
+  }
+}
+
+.team__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+}
+
+.team__left-box {
+  width: 41%;
+  max-width: 585px;
+
+  @media (max-width: 1550px) {
+    width: 48%;
+  }
+
+  @media (max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.team__title {
+  margin-bottom: 35px;
+  color: white;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 50px;
+
+  @media (max-width: 1200px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 23px;
+    line-height: 40px;
+  }
+}
+
+.team__text {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 32px;
+  line-height: 1.38;
+
+  @media (max-width: 991px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 21px;
+  }
+}
+
+.team__right-box {
+  position: relative;
+  width: 48%;
+  max-width: 689px;
+  min-height: 501px;
+  padding-top: 78px;
+  padding-right: 55px;
+  padding-bottom: 30px;
+  padding-left: 35px;
+  background-color: white;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 105%;
+    height: 105%;
+    border: 1px solid white;
+    content: '';
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  @media (max-width: 1200px) {
+    padding-top: 35px;
+  }
+
+  @media (max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 575px) {
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.team__list-caption {
+  margin-bottom: 35px;
+  font-size: 32px;
+
+  @media (max-width: 575px) {
+    font-size: 25px;
+  }
+}
+
+.team__list {
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.team__item {
+  position: relative;
+  padding-bottom: 35px;
+  padding-left: 35px;
+  margin-bottom: 30px;
+  background-image: url('/src/img/step-line.png');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  line-height: 1.44;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 18px;
+    content: url('/src/img/icons/check.svg');
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 14px;
+  }
+}
+
+.team__result-text {
+  position: relative;
+  top: -44px;
+  left: 20px;
+  width: 90%;
+  max-width: 770px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 64px;
+  margin-bottom: 116px - 44px;
+  background-color: black;
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: -70px;
+    width: 70px;
+    height: 100%;
+    background:
+      linear-gradient(
+        to top right,
+        black 50%,
+        rgba(255, 0, 0, 0) 52%
+      );
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -38px;
+    left: 0;
+    width: 105%;
+    height: 38px;
+    background-image: url('/src/img/red-badge.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+
+    @media (max-width: 991px) {
+      background-size: contain;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    top: -14px;
+  }
+
+  @media (max-width: 991px) {
+    top: 0;
+    left: 0;
+  }
+
+  @media (max-width: 575px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    font-size: 19px;
+  }
+}
+
+.team__note {
+  width: 100%;
+  max-width: 944px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  color: white;
+  font-size: 21px;
+  line-height: 1.52;
+  text-align: center;
+
+  @media (max-width: 575px) {
+    font-size: 17px;
+  }
+}

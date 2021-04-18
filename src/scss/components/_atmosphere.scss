@@ -1,0 +1,148 @@
+.atmosphere {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.atmosphere__title {
+  width: 100%;
+  max-width: 699px;
+  margin-bottom: 25px;
+  color: #1b1b1b;
+  font-size: 44px;
+  font-weight: bold;
+
+  span {
+    color: $red;
+  }
+
+  @media (max-width: 1450px) {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 30px;
+  }
+}
+
+.atmosphere__text {
+  width: 100%;
+  max-width: 699px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.44;
+
+  @media (max-width: 1450px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 15px;
+  }
+}
+
+.atmosphere__list {
+  display: flex;
+  width: 100%;
+  max-width: 699px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 30px;
+  list-style: none;
+
+  @media (max-width: 1450px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (max-width: 767px) {
+    justify-content: space-around;
+  }
+}
+
+.atmosphere__item {
+  display: flex;
+  width: 204px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.atmosphere__item-img {
+  margin-bottom: 15px;
+}
+
+.atmosphere__item-text {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+}
+
+.atmosphere__text-box {
+  padding-top: 45px;
+  padding-right: 20px;
+  padding-bottom: 45px;
+  padding-left: 50px;
+  background: rgb(243, 244, 245);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(243, 244, 245, 1) 0%,
+      rgba(243, 244, 245, 0) 100%
+    );
+
+  @media (max-width: 1450px) {
+    width: 100%;
+    max-width: 699px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (max-width: 575px) {
+    padding-top: 25px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+  }
+}
+
+.atmosphere__text-desc {
+  width: 100%;
+  max-width: 565px;
+  margin-bottom: 0;
+  font-size: 21px;
+  line-height: 1.52;
+
+  &:first-child {
+    margin-bottom: 30px;
+    color: $red;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 16px;
+  }
+}
+
+.atmosphere__img {
+  position: absolute;
+  top: -100px;
+  right: 0;
+
+  @media (max-width: 1450px) {
+    position: relative;
+    top: -70px;
+    display: block;
+    width: 100%;
+    max-width: 856px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (max-width: 767px) {
+    top: 0;
+  }
+}

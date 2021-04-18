@@ -1,0 +1,164 @@
+.kids {
+  padding-top: 70px;
+  padding-bottom: 120px;
+  overflow-x: hidden;
+
+  @media (max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+
+.kids__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+}
+
+.kids__left-box {
+  width: 42%;
+  max-width: 601px;
+
+  @media (max-width: 1200px) {
+    width: 50%;
+  }
+
+  @media (max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.kids__title {
+  margin-bottom: 20px;
+  color: #1b1b1b;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 50px;
+
+  span {
+    color: $red;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+.kids__img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.kids__right-box {
+  width: 47.5%;
+  max-width: 690px;
+
+  @media (max-width: 991px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.kids__list-caption {
+  margin-bottom: 40px;
+  font-size: 32px;
+  line-height: 1.38;
+
+  @media (max-width: 575px) {
+    font-size: 21px;
+  }
+}
+
+.kids__list {
+  padding: 0;
+  margin-bottom: 128px;
+  list-style: none;
+
+  @media (max-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.kids__item {
+  position: relative;
+  padding-left: 34px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 1.44;
+
+  &::before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 18px;
+    content: url('/src/img/icons/check.svg');
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.kids__result-text {
+  position: relative;
+  width: 95%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 23px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: -60px;
+    width: 60px;
+    height: 100%;
+    background:
+      linear-gradient(
+        to top right,
+        black 50%,
+        rgba(255, 0, 0, 0) 52%
+      );
+    content: '';
+
+    @media (max-width: 575px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -59px;
+    left: 0;
+    width: 105%;
+    height: 59px;
+    background-image: url('/src/img/grey-badge.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+
+    @media (max-width: 1450px) {
+      background-size: contain;
+    }
+
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+}

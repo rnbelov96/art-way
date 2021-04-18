@@ -1,0 +1,109 @@
+.steps {
+  overflow: hidden;
+  padding-top: 240px;
+  padding-bottom: 110px;
+
+  @media (max-width: 1400px) {
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 1200px) {
+    padding-top: 80px;
+  }
+}
+
+.steps__title {
+  width: 100%;
+  max-width: 850px;
+  margin-bottom: 55px;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 50px;
+
+  span {
+    color: $red;
+  }
+
+  @media (max-width: 1400px) {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+.steps__list {
+  width: 100%;
+  max-width: 707px;
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  @media (max-width: 1400px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.steps__item {
+  position: relative;
+  padding-bottom: 31px;
+  padding-left: 35px;
+  margin-bottom: 23px;
+  background-image: url('/src/img/step-line.png');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  line-height: 1.44;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 18px;
+    content: url('/src/img/icons/check.svg');
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-image: none;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 15px;
+  }
+}
+
+.steps__img {
+  position: absolute;
+  top: -200px;
+  right: -220px;
+
+  @media (max-width: 1400px) {
+    position: relative;
+    top: -40px;
+    right: 0;
+    display: block;
+    width: 100%;
+    max-width: 986px;
+    margin-right: auto;
+    margin-bottom: -40px;
+    margin-left: auto;
+  }
+
+  @media (max-width: 575px) {
+    top: -20px;
+    margin-bottom: -20px;
+  }
+}

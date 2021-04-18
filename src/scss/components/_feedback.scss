@@ -1,0 +1,15 @@
+.feedback {
+  min-height: 580px;
+  padding-top: 263px;
+  background-image: url('/src/img/bgs/feedback-bg.png');
+
+  @include bg;
+
+  @media (max-width: 1200px) {
+    min-height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $red;
+    background-image: none;
+  }
+}

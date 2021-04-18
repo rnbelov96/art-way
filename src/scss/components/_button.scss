@@ -1,0 +1,122 @@
+.button {
+  position: relative;
+  width: 400px;
+  min-height: 73px;
+  padding-left: 40px;
+  border: 0;
+  background-image:
+    linear-gradient(to top, #efb400, #fcdb00),
+    linear-gradient(to bottom, #ca3234, #ca3234);
+  border-radius: 4px;
+  box-shadow: 0 6px 0 0 #cf8800, 0 4px 24px 0 rgba(202, 50, 52, 0.36);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-image:
+      linear-gradient(to top, #d39f02, #efb400),
+      linear-gradient(to bottom, #ca3234, #ca3234);
+    box-shadow: 0 6px 0 0 #ca8500, 0 4px 24px 0 rgba(202, 50, 52, 0.36);
+  }
+
+  &_thanks {
+    width: 100%;
+    max-width: 400px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  &_modal {
+    width: 100%;
+    max-width: 400px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  &_form {
+    width: 40%;
+    max-width: 400px;
+    text-align: left;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      width: 29px;
+      height: 30px;
+      content: url('/src/img/icons/pdf.svg');
+      transform: translateY(-50%);
+
+      @media (max-width: 1400px) {
+        content: none;
+      }
+    }
+
+    @media (max-width: 1400px) {
+      padding-left: 0;
+      text-align: center;
+    }
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  &_form-partner {
+    text-align: center;
+
+    &::before {
+      top: 58%;
+      right: -54px;
+      width: 163px;
+      height: 173px;
+      content: url('/src/img/icons/clip.png');
+
+      @media (max-width: 1300px) {
+        right: -93px;
+      }
+
+      @media (max-width: 575px) {
+        content: none;
+      }
+    }
+  }
+
+  &_calc {
+    width: 100%;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    margin-top: 90px;
+    font-size: 21px;
+    text-align: left;
+
+    &::before {
+      position: absolute;
+      top: -47px;
+      right: -9px;
+      content: url('/src/img/recepie.png');
+
+      @media (max-width: 1500px) {
+        right: -47px;
+      }
+
+      @media (max-width: 575px) {
+        content: none;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      margin-top: 55px;
+    }
+
+    @media (max-width: 575px) {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+}
