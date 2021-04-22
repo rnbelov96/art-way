@@ -66,6 +66,7 @@
   }
 
   &_form-partner {
+    padding-left: 0;
     text-align: center;
 
     &::before {
@@ -117,6 +118,79 @@
     @media (max-width: 575px) {
       margin-top: 20px;
       font-size: 16px;
+      text-align: center;
     }
   }
+
+  &_desc {
+    display: flex;
+    width: 40%;
+    max-width: 400px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 29px;
+    text-align: center;
+
+    & span {
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    &::before {
+      position: absolute;
+      top: -60px;
+      right: -30px;
+      width: 146px;
+      height: 156px;
+      background-image: url('/src/img/sign.png');
+      content: '';
+
+      @include bg;
+
+      @media (max-width: 1300px) {
+        right: -88px;
+      }
+
+      @media (max-width: 575px) {
+        content: none;
+      }
+
+      @media (max-width: 1200px) {
+        top: -40px;
+        right: -21px;
+        width: 120px;
+        height: 125px;
+      }
+    }
+
+    @media (max-width: 1400px) {
+      padding-left: 13px;
+    }
+
+    @media (max-width: 1200px) {
+      padding-right: 90px;
+    }
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+
+    @media (max-width: 991px) {
+      padding-right: 0;
+      padding-left: 30px;
+    }
+
+    @media (max-width: 767px) {
+      padding-left: 20px;
+    }
+
+    @media (max-width: 575px) {
+      justify-content: center;
+      padding-left: 0;
+    }
+  }
+}
+
+.button__text-wrapper {
+  margin-bottom: 0;
 }

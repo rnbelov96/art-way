@@ -5,7 +5,6 @@ const rangeElList = document.querySelectorAll('.js-range');
 
 const classesRange = document.querySelector('.js-classes-range') as HTMLInputElement;
 const merchRange = document.querySelector('.js-merch-range') as HTMLInputElement;
-const actionsRange = document.querySelector('.js-actions-range') as HTMLInputElement;
 
 const incomeLabelEl = document.querySelector('.js-income') as HTMLSpanElement;
 const profitLabelEl = document.querySelector('.js-profit') as HTMLSpanElement;
@@ -15,13 +14,10 @@ let profit: number;
 
 let classesCurrentStep = 4;
 let merchCurrentStep = 4;
-let actionsCurrentStep = 3;
 
 const calcResult = () => {
-  income = Number(classesRange.value)
-    * Number(merchRange.value)
-    * Number(actionsRange.value);
-  profit = income * 0.5;
+  income = Number(classesRange.value) * 2500 + Number(merchRange.value) * 3000;
+  profit = income * 0.4;
   incomeLabelEl.textContent = income.toLocaleString();
   profitLabelEl.textContent = (profit).toLocaleString();
 };
@@ -64,20 +60,6 @@ merchRange.addEventListener('input', e => {
   rangeEl.style.background = `linear-gradient(to right, #f3a925 0%, #f3a925 ${String(
     (merchCurrentStep / steps) * 100,
   )}%, #d3d3d3 ${String((merchCurrentStep / steps) * 100)}%, #d3d3d3 100%)`;
-
-  calcResult();
-});
-
-actionsRange.addEventListener('input', e => {
-  const rangeEl = e.currentTarget as HTMLInputElement;
-
-  const steps = (Number(rangeEl.max) - Number(rangeEl.min)) / Number(rangeEl.step);
-
-  actionsCurrentStep = (Number(rangeEl.value) - Number(rangeEl.min)) / Number(rangeEl.step);
-
-  rangeEl.style.background = `linear-gradient(to right, #f3a925 0%, #f3a925 ${String(
-    (actionsCurrentStep / steps) * 100,
-  )}%, #d3d3d3 ${String((actionsCurrentStep / steps) * 100)}%, #d3d3d3 100%)`;
 
   calcResult();
 });

@@ -51,6 +51,21 @@
   max-width: 489px;
   margin-right: auto;
   margin-left: auto;
+
+  &_short {
+    display: none;
+
+    @media (max-width: 991px) {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  &_long {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
 }
 
 .market__right-box {

@@ -46,6 +46,8 @@
   min-height: 160px;
   border: solid 1px #adb2b9;
   margin-bottom: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   &:nth-child(1) {
     order: 1;
@@ -67,23 +69,13 @@
     }
   }
 
-  &:nth-child(4) {
-    order: 4;
-  }
-
-  &:last-child {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #303030;
-  }
-
   @media (max-width: 991px) {
     width: 100%;
   }
 
   @media (max-width: 575px) {
     flex-wrap: wrap;
+    padding-top: 0;
   }
 }
 
@@ -161,20 +153,17 @@
   @media (max-width: 575px) {
     align-items: center;
     text-align: center;
+    padding-left: 0;
   }
 }
 
 .math__income-text {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 1.44;
 
   &:last-child {
     margin-bottom: 0;
-
-    @media (max-width: 575px) {
-      padding-bottom: 15px;
-    }
   }
 
   span {

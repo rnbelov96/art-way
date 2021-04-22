@@ -27,7 +27,7 @@ const openModal = (modalEl: HTMLDivElement) => {
 };
 
 const modalElList = document.querySelectorAll('.modal');
-const [policyModalEl, formModalEl, youtubeAdvModalEl] = modalElList;
+const [policyModalEl, formModalEl, youtubeAdvModalEl, contactsModalEl] = modalElList;
 
 const formTitleEl = formModalEl.querySelector('h3') as HTMLHeadingElement;
 const formBtnEl = formModalEl.querySelector('button') as HTMLButtonElement;
@@ -87,4 +87,9 @@ planBtnElList.forEach(btn => {
 const youtubeAdvBtnCallEl = document.querySelector('.js-youtube') as HTMLButtonElement;
 youtubeAdvBtnCallEl.addEventListener('click', () => {
   openModal(youtubeAdvModalEl as HTMLDivElement);
+});
+
+const contactsBtnCallEl = document.querySelector('.js-contacts-call') as HTMLButtonElement;
+contactsBtnCallEl.addEventListener('click', () => {
+  openModal(contactsModalEl as HTMLDivElement);
 });

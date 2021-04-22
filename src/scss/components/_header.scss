@@ -10,27 +10,32 @@
 }
 
 .header__logo-box {
-  display: flex;
-  align-items: center;
-
   @media (max-width: 1200px) {
     margin-bottom: 15px;
   }
 
   @media (max-width: 575px) {
-    flex-direction: column;
-    justify-content: center;
+    margin-bottom: 5px;
   }
 }
 
 .header__logo {
   margin-right: 25px;
+
+  @media (max-width: 575px) {
+    margin-right: 0;
+  }
 }
 
 .header__logo-text {
   color: #191918;
   font-size: 16px;
   line-height: 1.31;
+
+  @media (max-width: 575px) {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
 }
 
 .header__address {
@@ -52,6 +57,10 @@
   @media (max-width: 1200px) {
     margin-bottom: 15px;
   }
+
+  @media (max-width: 575px) {
+    display: none;
+  }
 }
 
 .header__phone-box {
@@ -71,6 +80,10 @@
 
   @media (max-width: 1200px) {
     margin-bottom: 15px;
+  }
+
+  @media (max-width: 575px) {
+    display: none;
   }
 }
 
@@ -95,6 +108,24 @@
     width: 14px;
     height: 14px;
     content: url('/src/img/icons/call.svg');
+  }
+}
+
+.header__modal-call {
+  display: none;
+  width: 244px;
+  padding-top: 13px;
+  padding-right: 40px;
+  padding-bottom: 11px;
+  padding-left: 40px;
+  border: 0;
+  background-color: white;
+  border-radius: 32.5px;
+  color: $red;
+  opacity: 0.94;
+
+  @media (max-width: 575px) {
+    display: block;
   }
 }
 

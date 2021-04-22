@@ -8,17 +8,14 @@
   <body class="thanks__body">
     <section class="thanks__header">
       <div class="container">
-        <header class="header header_thanks">
+        <header class="header header__thanks">
           <div class="header__logo-box">
+            <p class="header__logo-text">Федеральное творческое движение</p>
             <img
               src="./img/icons/logo.png"
               alt="Логотип компании"
               class="header__logo"
             />
-            <p class="header__logo-text">
-              творческий центр <br />
-              для детей
-            </p>
           </div>
           <p class="header__address">
             г. Москва <br />
@@ -30,6 +27,9 @@
               Обратный звонок
             </button>
           </div>
+          <button class="header__modal-call js-contacts-call">
+            Адрес и телефон
+          </button>
         </header>
       </div>
     </section>
@@ -86,5 +86,27 @@
         </p>
       </footer>
     </section>
+
+    <div class="modal">
+      <div class="modal__center-wrapper">
+        <div class="contacts-modal">
+          <div class="contacts-modal__wrapper">
+            <p class="contacts-modal__address">
+              г. Москва <br />
+              ул. Марксистская, д. 34
+            </p>
+            <a href="tel:+79829101513" class="contacts-modal__phone-box"
+              >+7 (982) 910-15-13</a
+            >
+          </div>
+          <button
+            data-modal-close=""
+            class="modal__close"
+            title="Закрыть"
+            type="button"
+          ></button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
