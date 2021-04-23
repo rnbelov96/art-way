@@ -2,7 +2,7 @@
   @include bg;
 
   min-height: 1653px;
-  padding-top: 10px;
+  padding-top: 25px;
   background-image: url('/src/img/bgs/desc-bg.png');
   overflow-x: hidden;
 }
@@ -54,7 +54,8 @@
   }
 
   @media (max-width: 575px) {
-    font-size: 16px;
+    font-size: 15px;
+    max-width: 400px;
   }
 }
 

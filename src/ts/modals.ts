@@ -27,7 +27,7 @@ const openModal = (modalEl: HTMLDivElement) => {
 };
 
 const modalElList = document.querySelectorAll('.modal');
-const [policyModalEl, formModalEl, youtubeAdvModalEl, contactsModalEl] = modalElList;
+const [formModalEl, policyModalEl, youtubeAdvModalEl, contactsModalEl] = modalElList;
 
 const formTitleEl = formModalEl.querySelector('h3') as HTMLHeadingElement;
 const formBtnEl = formModalEl.querySelector('button') as HTMLButtonElement;
