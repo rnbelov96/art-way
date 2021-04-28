@@ -10,7 +10,7 @@ const changeMode = (pageWidth: number) => {
   return 3;
 };
 
-const imagesLength = 8;
+const imagesLength = 12;
 let currentImage = 1;
 let pageWidth = document.documentElement.scrollWidth;
 let mode = changeMode(pageWidth);
