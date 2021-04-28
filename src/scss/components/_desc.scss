@@ -15,7 +15,7 @@
   width: 100%;
   max-width: 702px;
   margin-top: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   color: #1b1b1b;
   font-size: 56px;
   font-weight: bold;
@@ -71,6 +71,18 @@
 
   @media (max-width: 1000px) {
     margin-bottom: 0;
+  }
+
+  @media (max-width: 1350px) {
+    margin-bottom: 90px;
+  }
+
+  @media (max-width: 1250px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 1100px) {
+
   }
 }
 
@@ -129,24 +141,24 @@
 .desc__kids-img {
   position: absolute;
   z-index: -1;
-  top: 210px;
+  top: 92px;
   right: -24px;
   width: 753px;
 
   @media (max-width: 1350px) {
-    top: 288px;
+    top: 124px;
     right: -20px;
     width: 640px;
   }
 
   @media (max-width: 1250px) {
-    top: 288px;
+    top: 138px;
     right: -68px;
     width: 543px;
   }
 
   @media (max-width: 1100px) {
-    top: 310px;
+    top: 171px;
     right: -81px;
     width: 459px;
   }
