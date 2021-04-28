@@ -1,6 +1,10 @@
 .offer {
   overflow: hidden;
-  padding-top: 383px;
+  padding-top: 300px;
+
+  @media (max-width: 1500px) {
+    padding-top: 415px;
+  }
 
   @media (max-width: 1200px) {
     padding-top: 40px;
@@ -15,6 +19,7 @@
 
   @media (max-width: 575px) {
     font-size: 26px;
+    text-align: center;
   }
 }
 

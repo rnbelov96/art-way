@@ -18,6 +18,7 @@
 
   @media (max-width: 575px) {
     font-size: 29px;
+    text-align: center;
   }
 }
 
@@ -44,10 +45,10 @@
   display: flex;
   width: 49.5%;
   min-height: 160px;
-  border: solid 1px #adb2b9;
-  margin-bottom: 22px;
   padding-top: 15px;
   padding-bottom: 15px;
+  border: solid 1px #adb2b9;
+  margin-bottom: 22px;
 
   &:nth-child(1) {
     order: 1;
@@ -163,8 +164,8 @@
 
   @media (max-width: 575px) {
     align-items: center;
-    text-align: center;
     padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -196,7 +197,7 @@
 
 .math__check-text,
 .math__rent-text {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   color: white;
   font-size: 18px;
   text-align: center;

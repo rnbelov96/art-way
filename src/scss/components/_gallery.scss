@@ -26,6 +26,7 @@
 
   @media (max-width: 575px) {
     font-size: 23px;
+    text-align: center;
   }
 }
 
@@ -36,5 +37,33 @@
 
   @media (max-width: 575px) {
     font-size: 15px;
+  }
+}
+
+.gallery__video-box {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  padding-bottom: 39.25%;
+  margin-right: auto;
+  margin-bottom: 70px;
+  margin-left: auto;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+  }
+
+  @media (max-width: 1300px) {
+    padding-bottom: 45.25%;
+  }
+
+  @media (max-width: 1000px) {
+    padding-bottom: 56.25%;
   }
 }

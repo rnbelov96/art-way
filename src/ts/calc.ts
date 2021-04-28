@@ -16,7 +16,7 @@ let classesCurrentStep = 4;
 let merchCurrentStep = 4;
 
 const calcResult = () => {
-  income = Number(classesRange.value) * 2500 + Number(merchRange.value) * 3000;
+  income = Number(classesRange.value) * 2500 + Number(merchRange.value) * 2500;
   profit = income * 0.4;
   incomeLabelEl.textContent = income.toLocaleString();
   profitLabelEl.textContent = (profit).toLocaleString();

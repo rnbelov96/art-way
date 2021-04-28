@@ -43,6 +43,10 @@
     font-size: 24px;
     line-height: 40px;
   }
+
+  @media (max-width: 575px) {
+    text-align: center;
+  }
 }
 
 .steps__list {
