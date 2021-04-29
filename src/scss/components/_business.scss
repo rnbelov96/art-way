@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 991px) {
     flex-direction: column;
   }
 }
@@ -23,6 +23,10 @@
   }
 
   @media (max-width: 1200px) {
+    width: 492px
+  }
+
+  @media (max-width: 991px) {
     width: 100%;
     max-width: 100%;
     margin-bottom: 20px;
@@ -35,6 +39,19 @@
   max-width: 755px;
   margin-right: auto;
   margin-left: auto;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+
+  &_with-magazine {
+    display: none;
+    @media (max-width: 991px) {
+      display: block;
+      position: relative;
+      left: -40px;
+    }
+  }
 }
 
 .business__right-box {
@@ -46,6 +63,10 @@
   }
 
   @media (max-width: 1200px) {
+    width: 52%;
+  }
+
+  @media (max-width: 991px) {
     width: 100%;
     max-width: 100%;
   }
@@ -119,6 +140,12 @@
   left: -245px;
 
   @media (max-width: 1200px) {
+    width: 700px;
+    top: 176px;
+    left: -165px;
+  }
+
+  @media (max-width: 991px) {
     display: none;
   }
 }
