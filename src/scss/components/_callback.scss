@@ -1,0 +1,62 @@
+.callback {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: $red;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  z-index: 9999;
+  border: 0px;
+  padding: 0;
+  font-size: 16px;
+  -webkit-animation: email-an linear 1s infinite;
+  animation: email-an linear 1s infinite;
+
+  @media (max-width: 575px) {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@-webkit-keyframes email-an {
+  0% {
+    box-shadow: 0 8px 10px rgba(249, 92, 24, 0.3),
+      0 0 0 0 rgba(249, 92, 24, 0.2), 0 0 0 0 rgba(249, 92, 24, 0.2);
+  }
+  40% {
+    box-shadow: 0 8px 10px rgba(249, 92, 24, 0.3),
+      0 0 0 15px rgba(249, 92, 24, 0.2), 0 0 0 0 rgba(249, 92, 24, 0.2);
+  }
+  80% {
+    box-shadow: 0 8px 10px rgba(249, 92, 24, 0.3),
+      0 0 0 30px rgba(249, 92, 24, 0), 0 0 0 26.7px rgba(249, 92, 24, 0.067);
+  }
+  100% {
+    box-shadow: 0 8px 10px rgba(249, 92, 24, 0.3),
+      0 0 0 30px rgba(249, 92, 24, 0), 0 0 0 40px rgba(249, 92, 24, 0);
+  }
+}
+@keyframes email-an {
+  0% {
+    box-shadow: 0 8px 10px rgba(249, 92, 24, 0.3),
+      0 0 0 0 rgba(249, 92, 24, 0.2), 0 0 0 0 rgba(249, 92, 24, 0.2);
+  }
+  40% {
+    box-shadow: 0 8px 10px rgba(249, 92, 24, 0.3),
+      0 0 0 15px rgba(249, 92, 24, 0.2), 0 0 0 0 rgba(249, 92, 24, 0.2);
+  }
+  80% {
+    box-shadow: 0 8px 10px rgba(249, 92, 24, 0.3),
+      0 0 0 30px rgba(249, 92, 24, 0), 0 0 0 26.7px rgba(249, 92, 24, 0.067);
+  }
+  100% {
+    box-shadow: 0 8px 10px rgba(249, 92, 24, 0.3),
+      0 0 0 30px rgba(249, 92, 24, 0), 0 0 0 40px rgba(249, 92, 24, 0);
+  }
+}

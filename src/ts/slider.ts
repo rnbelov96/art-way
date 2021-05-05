@@ -151,7 +151,7 @@ const swipeEnd = () => {
   wrapperEl.removeEventListener('mousemove', dragAction);
   wrapperEl.removeEventListener('touchmove', swipeAction);
 
-  if (offset < -translateStep / 2) {
+  if (offset < -translateStep / 8) {
     translateXPos += translateStep;
     currentImage -= 1;
     if (currentImage === 0) {
@@ -163,7 +163,7 @@ const swipeEnd = () => {
     );
   }
 
-  if (offset > translateStep / 2) {
+  if (offset > translateStep / 8) {
     translateXPos -= translateStep;
     currentImage += 1;
     if (currentImage === imagesLength + 1) {
