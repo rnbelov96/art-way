@@ -4,8 +4,7 @@
   min-height: 73px;
   padding-left: 40px;
   border: 0;
-  background-image:
-    linear-gradient(to top, #efb400, #fcdb00),
+  background-image: linear-gradient(to top, #efb400, #fcdb00),
     linear-gradient(to bottom, #ca3234, #ca3234);
   border-radius: 4px;
   box-shadow: 0 6px 0 0 #cf8800, 0 4px 24px 0 rgba(202, 50, 52, 0.36);
@@ -16,8 +15,7 @@
 
   &:hover,
   &:focus {
-    background-image:
-      linear-gradient(to top, #d39f02, #efb400),
+    background-image: linear-gradient(to top, #d39f02, #efb400),
       linear-gradient(to bottom, #ca3234, #ca3234);
     box-shadow: 0 6px 0 0 #ca8500, 0 4px 24px 0 rgba(202, 50, 52, 0.36);
   }
@@ -124,85 +122,42 @@
 
   &_desc {
     display: flex;
-    width: 40%;
+    padding-left: 0;
+    width: 100%;
     max-width: 400px;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: 29px;
+    justify-content: center;
     text-align: center;
 
     p {
-      padding-left: 20px;
       text-align: center;
     }
 
-    &::before {
-      position: absolute;
-      top: -60px;
-      right: -30px;
-      width: 146px;
-      height: 156px;
-      background-image: url('/src/img/sign.png');
-      content: '';
-
-      @include bg;
-
-      @media (max-width: 1300px) {
-        right: -88px;
-      }
-
-      @media (max-width: 575px) {
-        content: none;
-      }
-
-      @media (max-width: 1200px) {
-        top: -40px;
-        right: -21px;
-        width: 120px;
-        height: 125px;
-      }
+    @media (max-width: 991px) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
     }
+  }
 
-    @media (max-width: 1400px) {
-      padding-left: 13px;
-    }
+  &_slider {
+    display: flex;
+    padding-left: 0;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 
-    @media (max-width: 1200px) {
-      padding-right: 90px;
-    }
-
-    @media (max-width: 1100px) {
-      p {
-        padding-left: 0;
-        font-size: 16px;
-      }
+    p {
+      text-align: center;
     }
 
     @media (max-width: 991px) {
-      width: 100%;
-
-      p {
-        padding-left: 50px;
-        font-size: 18px;
-      }
-    }
-
-    @media (max-width: 991px) {
-      padding-right: 0;
-      padding-left: 30px;
-    }
-
-    @media (max-width: 767px) {
-      padding-left: 20px;
-    }
-
-    @media (max-width: 575px) {
-      justify-content: center;
-      padding-left: 0;
-
-      p {
-        padding-left: 0;
-      }
+      margin-bottom: 20px;
     }
   }
 }

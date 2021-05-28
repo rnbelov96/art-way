@@ -1,17 +1,5 @@
 .result {
   position: relative;
-  top: -300px;
-  margin-bottom: -300px;
-
-  @media (max-width: 1350px) {
-    top: -345px;
-    margin-bottom: -345px;
-  }
-
-  @media (max-width: 1250px) {
-    top: -400px;
-    margin-bottom: -400px;
-  }
 
   @media (max-width: 1000px) {
     margin-top: 40px;

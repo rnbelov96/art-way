@@ -3,12 +3,16 @@ export {};
 
 const modalFormInfoList = [
   {
-    title: 'Оставить заявку на бесплатную консультацию',
+    title: 'Оставьте заявку на бесплатную консультацию',
     button: 'Получить консультацию',
   },
   {
-    title: 'Получить подробный расчет на почту',
-    button: 'Получить расчет',
+    title: 'Получить финансовую модель на почту',
+    button: 'Получить финансовую модель',
+  },
+  {
+    title: 'Оставьте заявку и получите презентацию франшизы',
+    button: 'Получить презентацию',
   },
 ];
 
@@ -68,6 +72,7 @@ policyBtnElList.forEach(el => {
 
 const callbackBtnElList = document.querySelectorAll('.js-callback');
 const planBtnElList = document.querySelectorAll('.js-plan');
+const presentBtnElList = document.querySelectorAll('.js-present');
 
 callbackBtnElList.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -80,6 +85,13 @@ planBtnElList.forEach(btn => {
   btn.addEventListener('click', () => {
     formTitleEl.textContent = modalFormInfoList[1].title;
     formBtnEl.textContent = modalFormInfoList[1].button;
+    openModal(formModalEl as HTMLDivElement);
+  });
+});
+presentBtnElList.forEach(btn => {
+  btn.addEventListener('click', () => {
+    formTitleEl.textContent = modalFormInfoList[2].title;
+    formBtnEl.textContent = modalFormInfoList[2].button;
     openModal(formModalEl as HTMLDivElement);
   });
 });

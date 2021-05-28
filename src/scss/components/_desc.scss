@@ -1,10 +1,15 @@
 .desc {
   @include bg;
 
-  min-height: 1653px;
+  min-height: 860px;
   padding-top: 25px;
+  padding-bottom: 60px;
   background-image: url('/src/img/bgs/desc-bg.png');
   overflow-x: hidden;
+
+  @media (max-width: 991px) {
+    padding-bottom: 0;
+  }
 
   @media (max-width: 575px) {
     padding-top: 10px;
@@ -66,15 +71,11 @@
 
 .desc__list {
   padding: 0;
-  margin-bottom: 138px;
+  margin-bottom: 50px;
   list-style: none;
 
   @media (max-width: 1000px) {
     margin-bottom: 0;
-  }
-
-  @media (max-width: 1350px) {
-    margin-bottom: 90px;
   }
 
   @media (max-width: 1250px) {
